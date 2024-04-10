@@ -1,12 +1,14 @@
+
+import Card from "./Card";
 const Results = ({ results })=>{
     return (
-        <div>
+        <div className="sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 max-w-6xl mx-auto py-4">
             {
                 results?.map((result)=> {
                     return (
-                        <div key={result._id}>
-                            <h1>{result.original_title}</h1>
-                        </div>
+                        <Card 
+                        result={result}
+                        key={result._id}/>
                     )})}
         </div>
     )
