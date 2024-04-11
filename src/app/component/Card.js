@@ -12,6 +12,7 @@ const Card = ({result})=>{
           width={500}
           height={300}
           className='sm:rounded-t-lg hover:opacity-75 transition-opacity duration-300'
+          alt="card"
         ></Image>
         <div
         className='p-2'
